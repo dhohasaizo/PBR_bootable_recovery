@@ -2942,7 +2942,7 @@ TWPartitionManager::Get_Partition_List (string ListType,
 	  if ((*iter)->Is_Storage)
 	    {
 	      struct PartitionList part;
-	      sprintf (free_space, "%llu", (*iter)->Free / 1024 / 1024);
+	      sprintf (free_space, "%.1lf", (double)(*iter)->Free / 1024 / 1024);
 	      part.Display_Name = (*iter)->Storage_Name + " (";
 	      part.Display_Name += free_space;
 	      part.Display_Name += "MB)";
@@ -2981,7 +2981,7 @@ TWPartitionManager::Get_Partition_List (string ListType,
 			Backup_Size += (*subpart)->Backup_Size;
 		    }
 		}
-	      sprintf (backup_size, "%llu", Backup_Size / 1024 / 1024);
+	      sprintf (backup_size, "%.1lf", Backup_Size / 1024 / 1024);
 	      part.Display_Name = (*iter)->Backup_Display_Name + " (";
 	      part.Display_Name += backup_size;
 	      part.Display_Name += "MB)";
