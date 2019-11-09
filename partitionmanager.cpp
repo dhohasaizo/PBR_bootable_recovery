@@ -2981,7 +2981,7 @@ TWPartitionManager::Get_Partition_List (string ListType,
 			Backup_Size += (*subpart)->Backup_Size;
 		    }
 		}
-	      sprintf (backup_size, "%.1lf", Backup_Size / 1024 / 1024);
+	      sprintf (backup_size, "%.1lf", (double)Backup_Size / 1024 / 1024);
 	      part.Display_Name = (*iter)->Backup_Display_Name + " (";
 	      part.Display_Name += backup_size;
 	      part.Display_Name += "MB)";
