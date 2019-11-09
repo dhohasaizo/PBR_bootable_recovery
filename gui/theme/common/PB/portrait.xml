@@ -353,6 +353,12 @@
 			<image resource="main_button_half_height"/>
 		</style>
 		
+		<style name="main_button_half_height_full">
+			<highlight color="%highlight_color%"/>
+			<font resource="font_m" color="%text_button_color%"/>
+			<image resource="main_button_half_height_full"/>
+		</style>
+		
 		<style name="main_button_half_height_wipe">
 			<highlight color="%highlight_color%"/>
 			<font resource="font_m" color="%text_button_color%"/>
@@ -6216,7 +6222,7 @@
 				<template name="console"/>
 				<actions>
 					<action function="set">tw_filemanager_command=cat %tw_filename1%</action>
-					<action function="set">tw_fm_text1={@fm_reading=Reading}</action>
+					<action function="set">tw_fm_text1={@fm_reading=Reading File}</action>
 					<action function="page">readfile</action>
 				</actions>
 			</button>
