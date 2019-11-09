@@ -80,7 +80,7 @@
 		<string name="zip_warn2">software and render your device unusable.</string>
 		<string name="zip_back_cancel">Press back to cancel adding this zip.</string>
 		<string name="zip_back_clear">Press back button to clear the queue.</string>
-		<string name="zip_err_compatibility">Fix Treble Compatibility Error</string>
+		<string name="zip_err_compatibility">Zip Treble Compatibility Error</string>
 		<string name="folder">Folder:</string>
 		<string name="file">File:</string>
 		<string name="zip_sig_chk">Zip signature verification</string>
@@ -448,7 +448,6 @@
 		<string name="fm_delete_btn">Delete</string>
 		<string name="fm_deleting">Deleting</string>
 		<string name="fm_rename_btn">Rename</string>
-		<string name="fm_rename_btn">Reading</string>
 		<string name="fm_reading">Reading File</string>
 		<string name="fm_rename_file_btn">Rename File</string>
 		<string name="fm_rename_folder_btn">Rename Folder</string>

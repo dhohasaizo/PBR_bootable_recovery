@@ -507,13 +507,13 @@ TWPartitionManager::Output_Partition (TWPartition * Part)
 {
   unsigned long long mb = 1048576;
 
-  printf ("%s | %s | Size: %iMB", Part->Mount_Point.c_str (),
-	  Part->Actual_Block_Device.c_str (), (int) (Part->Size / mb));
+  printf ("%s | %s | Size: %.1lfMB", Part->Mount_Point.c_str (),
+	  Part->Actual_Block_Device.c_str (), (int) (double)Part->Size / mb);
   if (Part->Can_Be_Mounted)
     {
-      printf (" Used: %iMB Free: %iMB Backup Size: %iMB",
-	      (int) (Part->Used / mb), (int) (Part->Free / mb),
-	      (int) (Part->Backup_Size / mb));
+      printf (" Used: %.1lfMB Free: %.1lfMB Backup Size: %.1lfMB",
+	      (double) Part->Used / mb, (double) Part->Free / mb,
+	      (double) Part->Backup_Size / mb);
     }
   printf ("\n   Flags: ");
   if (Part->Can_Be_Mounted)
